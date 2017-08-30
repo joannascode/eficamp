@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: $grey;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  padding-top: 110px;
+}
+
+h1 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  color: $black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.colorbp {
+  color: $white;
+  border: 1px solid $blue_bg;
+  border-radius: 2px;
+  background-color: $blue_bg;
+  padding: 3px 2px 3px 2px;
+}
+
+.treeoption {
+  margin-top: 25px;
+}
+
+.add {
+  font-size: 11px;
+  color: $black;
+  padding-right: 5px;
+  padding-left: 80px;
+}
+
+.info {
+  color: $black;
+  .infolegend {
+    font-size: 20px;
+  }
+}
+
+.analysis {
+  font-size: 11px;
+  padding-top: 15px;
+}
+
+.chart {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: $white;
+  color: $black;
+  width: 950px;
+  height: 198px;
+}
+
+.others {
+  color: $black;
+  margin-top: 20px;
+}
+
+.lists {
+  border: 1px solid $white;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  background-color: $white;
+  padding: 15px 15px 8px;
+  color: $black;
+  text-align: center;
+  width: 180px;
+  height: 70px;
+  display: inline-block;
+  &:hover {
+    background-color: $blue_bg;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #000;
+  }
+}
+
+.fastpay {
+  font-size: 11px;
+  text-align: center;
+  margin-left: 4px;
+  width: 57px;
+  height: 30px;
+  display: inline-block;
+  color: $white;
+  border: 1px solid $blue_bg;
+  border-radius: 2px;
+  background-color: $blue_bg;
+  padding: 8px 3px 1px 3px;
+}
+
+.bloans {
+  .fa-hand-o-right {
+    color: grey;
+    display: inline-block;
+  }
+}
+
+.funds {
+  .fa-bar-chart {
+    color: grey;
+    display: inline-block;
+  }
+}
+
+.history-list {
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: 3px;
+  margin-top: 11px;
+  width: 475px;
+  height: 350px;
+  margin-bottom: 50px;
+  overflow: auto;
+}
