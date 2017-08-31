@@ -1,0 +1,61 @@
+.boxTransfer {
+  background-color: $white;
+  margin-bottom: 70px;
+  margin-top: 70px;
+  margin-left: 110px;
+  margin-right: 110px;
+  border-radius: 3px;
+}
+
+
+.cashClient {
+  margin-top: 20px;
+  border: 1px solid #c0c0c0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.currentAccount {
+  color: $black;
+}
+
+.cashAll {
+  color: $black;
+}
+
+.add {
+  margin-left: 150px;
+}
+
+.buttonContinue {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: #259fd3;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  margin-left: 150px;
+}
+
+.typeClass {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sumNumber {
+  width: 350px;
+  display: inline-block;
+}
+
+.sumCheck {
+  width: 150px;
+  display: inline-block;
+}
+
+.numberClients {
+  width: 500px;
+}
