@@ -73,21 +73,30 @@
             </div>
         </div>
         <div class="row">
-            <div class="small-12 medium-3 column typeClass">
+            <div class="small-12 medium-3 column type-class">
                 <label for="">Type</label>
             </div>
-            <div class="small-12 medium-9 column typeClass">
-                <input type="radio" id="radio1" name="transfertype">
-                <label for="radio1">Country</label>
-                <input type="radio" id="own1"  name="transfertype">
-                <label for="own1">Own</label>
-                <input type="radio" id="currencies1" name="transfertype">
-                <label for="currencies1">Currencies</label>
-                <input type="radio" id="zus1" name="transfertype">
+            <div class="small-12 medium-9 column transfer-type type-class">
+                <label for="radio" class="countryLabel">
+                <input type="radio" id="radio" name="transfertype" class="hide">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                 <span class="country">Country</span>
+                </label>
+                <label for="own1">
+                <input type="radio" id="own1"  name="transfertype" class="hide">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="own">Own</span>
+                </label>
+                <label for="currencies1">
+                <input type="radio" id="currencies1" name="transfertype" class="hide">
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <span class="currencies">Currencies</span>
+                </label>
+                <input type="radio" id="zus1" name="transfertype" class="hide">
                 <label for="zus1">ZUS</label>
-                <input type="radio" id="tax1" name="transfertype">
+                <input type="radio" id="tax1" name="transfertype" class="hide">
                 <label for="tax1">TAX</label>
-                <input type="radio" id="gsm1" name="transfertype">
+                <input type="radio" id="gsm1" name="transfertype" class="hide">
                 <label for="gsm1">GSM</label>
             </div>
         </div>
@@ -104,16 +113,16 @@
                 <label for="">Where</label>
             </div>
             <div class="small-12 medium-9 column">
-                <input type="radio" id="account2" name="transfertype2">
-                <label for="account2">Account</label>
-                <input type="radio" id="facebook2" name="transfertype2">
-                <label for="facebook2">Facebook</label>
-                <input type="radio" id="phone2" name="transfertype2">
-                <label for="phone2">Phone</label>
-                <input type="radio" id="email2" name="transfertype2">
-                <label for="email2">E-mail</label>
-                <input type="radio" id="byphone1" name="transfertype2">
-                <label for="byphone1">By phone</label>
+                <input type="radio" id="account" name="transfertype2">
+                <label for="account">Account</label>
+                <input type="radio" id="facebook" name="transfertype2">
+                <label for="facebook">Facebook</label>
+                <input type="radio" id="phone" name="transfertype2">
+                <label for="phone">Phone</label>
+                <input type="radio" id="email" name="transfertype2">
+                <label for="email">E-mail</label>
+                <input type="radio" id="byphone" name="transfertype2">
+                <label for="byphone">By phone</label>
             </div>
         </div>
         <div class="row">
@@ -152,12 +161,12 @@
                 <label for="">Type of transfer</label>
             </div>
             <div class="small-12 medium-9 column">
-                <input type="radio" id="account1" name="transfertype1">
-                <label for="account1">Account</label>
-                <input type="radio" id="facebook1" name="transfertype1">
-                <label for="facebook1">Facebook</label>
-                <input type="radio" id="phone1" name="transfertype1">
-                <label for="phone1">Phone</label>
+                <input type="radio" id="normaly" name="transfertype1">
+                <label for="normaly"><b>Normaly</b><br>about 2 days</label>
+                <input type="radio" id="expressEliksir" name="transfertype1">
+                <label for="expressEliksir"><b>Express Eliksir</b> <br> 15min</label>
+                <input type="radio" id="sorbnet" name="transfertype1">
+                <label for="sorbnet"><b>Sorbnet</b> <br> 2 hours</label>
             </div>
         </div>
         <div class="row">

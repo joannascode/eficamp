@@ -41,7 +41,7 @@
   margin-left: 150px;
 }
 
-.typeClass {
+.type-class {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -58,4 +58,54 @@
 
 .numberClients {
   width: 500px;
+}
+
+.countryLabel {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.fa-address-book {
+  color: $white;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
+}
+
+.country {
+  display: block;
+}
+
+.transfer-type {
+  input[type=radio]:checked + i { background-color: #0BBED3}
+}
+
+.fa-user {
+  display: inline-block;
+  color: $white;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
+}
+
+.own {
+  display: block;
+}
+
+.fa-money {
+  display: inline-block;
+  color: $white;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
+}
+
+.currencies {
+  display: block;
 }
