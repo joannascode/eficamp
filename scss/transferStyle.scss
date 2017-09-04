@@ -2,8 +2,8 @@
   background-color: $white;
   margin-bottom: 70px;
   margin-top: 70px;
-  margin-left: 110px;
-  margin-right: 110px;
+  margin-left: 170px;
+  margin-right: 170px;
   border-radius: 3px;
 }
 
@@ -17,6 +17,11 @@
   margin-right: 20px;
 }
 
+.vcard {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .currentAccount {
   color: $black;
 }
@@ -26,7 +31,14 @@
 }
 
 .add {
-  margin-left: 150px;
+  margin-left: 195px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-img {
+  margin-right: 7px;
+  cursor: pointer;
 }
 
 .buttonContinue {
@@ -60,44 +72,37 @@
   width: 500px;
 }
 
-.countryLabel {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.fa-address-book {
+.cash-img {
+  width: 40px;
+  height: 40px;
   color: $white;
   background-color: grey;
   padding: 10px 10px 10px 10px;
   &:hover {
+    cursor: pointer;
     background-color: #0BBED3;
   }
 }
 
-.country {
-  display: block;
-}
 
 .transfer-type {
-  input[type=radio]:checked + i { background-color: #0BBED3}
+  input[type=radio]:checked + img { background-color: #0BBED3}
 }
 
 .fa-user {
-  display: inline-block;
+  width: 40px;
+  height: 40px;
   color: $white;
   background-color: grey;
   padding: 10px 10px 10px 10px;
   &:hover {
     background-color: #0BBED3;
   }
-}
-
-.own {
-  display: block;
 }
 
 .fa-money {
-  display: inline-block;
+  width: 40px;
+  height: 40px;
   color: $white;
   background-color: grey;
   padding: 10px 10px 10px 10px;
@@ -106,6 +111,38 @@
   }
 }
 
-.currencies {
-  display: block;
+.zus-img {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
+}
+
+label {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.us-img  {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
+}
+
+.shape-img {
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  padding: 10px 10px 10px 10px;
+  &:hover {
+    background-color: #0BBED3;
+  }
 }

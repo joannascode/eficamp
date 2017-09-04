@@ -13,7 +13,7 @@
 <header>
     <div class="row">
         <div class="small-6 medium-4 column">
-            <img src="#" alt="EFI3" class="logo">
+            <img src="img/ef_log.img" alt="EFI3" class="logo">
             <img src="#" alt="photo" class="photo">
             <p>Jan Kowalski</p>
             <a href="#" class="envlope">
@@ -59,6 +59,7 @@
         <div class="cashClient">
         <div class="row">
             <div class="small-12 medium-6 column">
+                <img src="img/vcard.png" class="vcard">
                 <span class="currentAccount">Current account<br>
                     33 1234 5678 2233 0000 8373 7756</span>
             </div>
@@ -68,8 +69,9 @@
         </div>
         </div>
         <div class="row">
-            <div class="small-12 medium-10 column">
-                <span class="add">Add the account from which you draw funds</span>
+            <div class="small-12 medium-10 column add">
+                <img src="img/add-img.png" class="add-img">
+                <span>Add the account from which you draw funds</span>
             </div>
         </div>
         <div class="row">
@@ -79,25 +81,34 @@
             <div class="small-12 medium-9 column transfer-type type-class">
                 <label for="radio" class="countryLabel">
                 <input type="radio" id="radio" name="transfertype" class="hide">
-                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <img src="img/cash.png" class="cash-img"><br>
                  <span class="country">Country</span>
                 </label>
                 <label for="own1">
                 <input type="radio" id="own1"  name="transfertype" class="hide">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i><br>
                 <span class="own">Own</span>
                 </label>
                 <label for="currencies1">
                 <input type="radio" id="currencies1" name="transfertype" class="hide">
-                    <i class="fa fa-money" aria-hidden="true"></i>
+                    <i class="fa fa-money" aria-hidden="true"></i><br>
                     <span class="currencies">Currencies</span>
                 </label>
+                <label for="zus1">
                 <input type="radio" id="zus1" name="transfertype" class="hide">
-                <label for="zus1">ZUS</label>
+                    <img src="img/zus.png" class="zus-img"><br>
+                <span class="zus">ZUS</span>
+                </label>
+                <label for="tax1">
                 <input type="radio" id="tax1" name="transfertype" class="hide">
-                <label for="tax1">TAX</label>
+                    <img src="img/us.png" class="us-img"><br>
+                <span class="tax">TAX</span>
+                </label>
+                <label for="gsm1">
                 <input type="radio" id="gsm1" name="transfertype" class="hide">
-                <label for="gsm1">GSM</label>
+                    <img src="img/shape-13.png" class="shape-img"><br>
+                <span class="gsm">GSM</span>
+                </label>
             </div>
         </div>
         <div class="row">
