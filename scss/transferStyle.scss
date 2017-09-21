@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .boxTransfer {
+  font-family: 'Roboto', sans-serif;
   background-color: $white;
   margin-bottom: 70px;
   margin-top: 70px;
-  margin-left: 170px;
-  margin-right: 170px;
+  margin-left: 200px;
+  margin-right: 200px;
   border-radius: 3px;
 }
 
+
+.back-img {
+  cursor: pointer;
+  margin-top: 15px;
+  margin-left: 10px;
+}
 
 .cashClient {
   margin-top: 20px;
@@ -19,19 +28,34 @@
 
 .vcard {
   display: inline-block;
-  margin-right: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
-.currentAccount {
+.current-account {
   color: $black;
+  margin-left: -15px;
 }
+
+.current-account-number {
+  color: $black;
+  margin-left: -15px;
+}
+
 
 .cashAll {
   color: $black;
+  font-size: 25px;
+  margin-left: 90px;
+}
+
+.cashall-img {
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 .add {
-  margin-left: 195px;
+  margin-left: 177px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -42,15 +66,21 @@
 }
 
 .buttonContinue {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 100;
+  font-stretch: condensed;
   cursor: pointer;
   border: 1px solid transparent;
+  border-radius: 2px;
   background-color: #259fd3;
   color: white;
-  padding: 5px 5px 5px 5px;
+  padding: 7px 13px 7px 13px;
   margin-top: 20px;
   margin-bottom: 20px;
   opacity: 0.8;
-  margin-left: 150px;
+  margin-left: 230px;
 }
 
 .type-class {
@@ -87,9 +117,12 @@
 
 .transfer-type {
   input[type=radio]:checked + img { background-color: #0BBED3}
+  display: flex;
+  justify-content: space-around;
+  margin-left: -35px;
 }
 
-.fa-user {
+.person-img {
   width: 40px;
   height: 40px;
   color: $white;
@@ -100,7 +133,7 @@
   }
 }
 
-.fa-money {
+.dolar-img {
   width: 40px;
   height: 40px;
   color: $white;
@@ -145,4 +178,30 @@ label {
   &:hover {
     background-color: #0BBED3;
   }
+}
+
+.recipient-input {
+  input {
+    color: gray;
+    width: 500px;
+    display: inline-block;
+  }
+}
+
+
+.recipient-c {
+  margin-top: 5px;
+}
+
+.where-c {
+  margin-top: 5px;
+}
+
+.title-input {
+  width: 500px;
+}
+
+.date-in {
+  width: 130px;
+  font-size: 12px;
 }

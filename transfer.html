@@ -54,17 +54,23 @@
 <main>
     <div class="boxTransfer">
         <div class="row">
-            <div class="small-12 medium-10 column"></div>
+            <div class="small-12 medium-10 column">
+                <img src="img/back.png" class="back-img">
+            </div>
         </div>
         <div class="cashClient">
         <div class="row">
-            <div class="small-12 medium-6 column">
+            <div class="small-6 medium-1 column">
                 <img src="img/vcard.png" class="vcard">
-                <span class="currentAccount">Current account<br>
-                    33 1234 5678 2233 0000 8373 7756</span>
             </div>
-            <div class="small-12 medium-6 column">
-                <span class="cashAll"><b>2 917, 50</b> PLN</span>
+            <div class="small-6 medium-6 column">
+                <span class="current-account">Current account<br></span>
+                <span class="current-account-number">33 1234 5678 2233 0000 8373 7756</span>
+            </div>
+            <div class="small-12 medium-5 column">
+                <span class="cashAll"><b>2 917, 50</b> PLN
+                <img src="img/down-img.png" class="cashall-img">
+                </span>
             </div>
         </div>
         </div>
@@ -78,7 +84,7 @@
             <div class="small-12 medium-3 column type-class">
                 <label for="">Type</label>
             </div>
-            <div class="small-12 medium-9 column transfer-type type-class">
+            <div class="small-12 medium-9 column-block transfer-type type-class">
                 <label for="radio" class="countryLabel">
                 <input type="radio" id="radio" name="transfertype" class="hide">
                     <img src="img/cash.png" class="cash-img"><br>
@@ -86,12 +92,12 @@
                 </label>
                 <label for="own1">
                 <input type="radio" id="own1"  name="transfertype" class="hide">
-                    <i class="fa fa-user" aria-hidden="true"></i><br>
+                    <img src="img/person.png" class="person-img"><br>
                 <span class="own">Own</span>
                 </label>
                 <label for="currencies1">
                 <input type="radio" id="currencies1" name="transfertype" class="hide">
-                    <i class="fa fa-money" aria-hidden="true"></i><br>
+                    <img src="img/dolar.png" class="dolar-img"><br>
                     <span class="currencies">Currencies</span>
                 </label>
                 <label for="zus1">
@@ -111,14 +117,18 @@
                 </label>
             </div>
         </div>
-        <div class="row">
+        <div class="recipient-c">
+         <div class="row">
             <div class="small-12 medium-3 column">
                 <label for="">Recipient</label>
             </div>
-            <div class="small-12 medium-9 column">
+            <div class="small-12 medium-9 column recipient-input">
                 <input type="text" value="Search for a recipient , contractor or customer">
+                <img src="img/book-img.png">
             </div>
+         </div>
         </div>
+        <div class="where-c">
         <div class="row">
             <div class="small-12 medium-3 column">
                 <label for="">Where</label>
@@ -136,12 +146,13 @@
                 <label for="byphone">By phone</label>
             </div>
         </div>
+        </div>
         <div class="row">
             <div class="small-12 medium-3 column">
                 <label for="">Number</label>
             </div>
             <div class="small-12 medium-9 column">
-                <input type="number" class="numberClients">
+                <input type="number" class="numberClients" data-validate="requried,number">
             </div>
         </div>
         <div class="row">
@@ -149,7 +160,7 @@
                 <label for="">Sum</label>
             </div>
             <div class="small-12 medium-9 column">
-                <input type="number" class="sumNumber">
+                <input type="number" class="sumNumber" data-validate="requried,sumNumber">
                 <input type="text" value="PLN" class="sumCheck">
             </div>
         </div>
@@ -157,14 +168,16 @@
             <div class="small-12 medium-3 column">
                 <label for="">When</label>
             </div>
-            <div class="small-12 medium-9 column"></div>
+            <div class="small-12 medium-9 column">
+                <input type="date" class="date-in" data-validate="calendar,calendarNoPast,calendarMonth">
+            </div>
         </div>
         <div class="row">
-            <div class="small-12 medium-3 column">
+            <div class="small-12 medium-3 column title">
                 <label for="">Title</label>
             </div>
             <div class="small-12 medium-9 column">
-                <input type="text">
+                <input type="text" class="title-input" data-validate="requried,text">
             </div>
         </div>
         <div class="row">
@@ -199,6 +212,6 @@
 <script src="bower_components/what-input/dist/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
 <script src="js/app.js"></script>
-<script src="js/script.js"></script>
+<script src="js/transfer.js"></script>
 </body>
 </html>
